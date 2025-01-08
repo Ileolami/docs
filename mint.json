@@ -28,7 +28,6 @@
   "tabs": [
     {
       "name": "API Reference",
-      "openapi": "/Users/ileolami/Documents/GitHub/docs/api-reference/movie.yaml",
       "url": "api-reference"
     }
   ],
