@@ -28,8 +28,8 @@
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-reference",
-      "openapi": "/Users/ileolami/Documents/GitHub/docs/api-reference/movie.yaml"
+      "openapi": "/Users/ileolami/Documents/GitHub/docs/api-reference/movie.yaml",
+      "url": "api-reference"
     }
   ],
   "anchors": [
