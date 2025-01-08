@@ -34,6 +34,11 @@
   ],
   "anchors": [
     {
+      "name": "API Reference",
+      "url": "api-reference",
+      "openapi": "/api-reference/movie.yaml"
+    },
+    {
       "name": "Community",
       "icon": "slack",
       "url": "https://mintlify.com/community"
