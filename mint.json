@@ -29,15 +29,10 @@
     {
       "name": "API Reference",
       "url": "api-reference",
-      "openapi": "/api-reference/movie.yaml"
+      "openapi": "api-reference/openapi.json"
     }
   ],
   "anchors": [
-    {
-      "name": "API Reference",
-      "url": "api-reference",
-      "openapi": "/api-reference/movie.yaml"
-    },
     {
       "name": "Community",
       "icon": "slack",
