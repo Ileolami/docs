@@ -2305,8 +2305,8 @@
 								"list"
 							]
 						},
-						"description": "### Get Movie Certifications\n\nThis endpoint retrieves the list of movie certifications for different countries.\n\n#### Request Body\n\nThis is a GET request and does not require a request body.\n\n#### Response\n\nThe response will be in JSON format with a status code of 200. It will contain a list of certifications for various countries. Each country will have an array of certification objects, where each object includes the certification code, meaning, and order.\n\nExample response:\n\n``` json\n{\n    \"certifications\": {\n        \"DE\": [{\"certification\":\"\",\"meaning\":\"\",\"order\":0}],\n        \"BR\": [{\"certification\":\"\",\"meaning\":\"\",\"order\":0}],\n        ...\n        \"US\": [{\"certification\":\"\",\"meaning\":\"\",\"order\":0}],\n        \"CH\": [{\"certification\":\"\",\"meaning\":\"\",\"order\":0}],\n        \"LV\": [{\"certification\":\"\",\"meaning\":\"\",\"order\":0}],\n        \"PL\": [{\"certification\":\"\",\"meaning\":\"\",\"order\":0}],\n        \"BE\": [{\"certification\":\"\",\"meaning\":\"\",\"order\":0}]\n    }\n}\n\n ```"
-					},
+						"description": "### Get Movie Certifications\n\nThis endpoint retrieves the list of movie certifications for different countries."
+										},
 					"response": [
 						{
 							"name": "Movies certifications",
