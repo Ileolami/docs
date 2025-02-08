@@ -1,29 +1,33 @@
 {
   "$schema": "https://mintlify.com/schema.json",
-  "name": "TMDB",
+  "name": "TMDB API Documentation",
   "logo": {
-    "dark": "/logo/dark.svg",
-    "light": "/logo/light.svg"
+    "dark": "/images/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg",
+    "light": "/images/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
   },
-  "favicon": "/29c6fee-blue_short.svg",
+  "favicon": "/images/29c6fee-blue_short.svg",
   "colors": {
-    "primary": "#0D9373",
-    "light": "#07C983",
-    "dark": "#0D9373",
+    "primary": "#5ebedb",
+    "light": "#abf7f1",
+    "dark": "#5ebedb",
     "anchors": {
       "from": "#0D9373",
-      "to": "#07C983"
+      "to": "#abf7f1"
     }
   },
   "topbarLinks": [
     {
       "name": "Support",
-      "url": "mailto:makindemercymiracle@gmail.com"
+      "url": "https://www.themoviedb.org/about/get-in-touch/"
+    },
+    {
+      "name": "Service Status",
+      "url": "https://status.themoviedb.org/"
     }
   ],
   "topbarCtaButton": {
-    "name": "Dashboard",
-    "url": "https://dashboard.mintlify.com"
+    "name": "OAS",
+    "url": "https://developer.themoviedb.org/openapi"
   },
   "tabs": [
     {
@@ -32,57 +36,54 @@
       "openapi": "/api-reference/openapi.yaml"
     }
   ],
-  "anchors": [
-    {
-      "name": "Community",
-      "icon": "slack",
-      "url": "https://mintlify.com/community"
-    },
-    {
-      "name": "Blog",
-      "icon": "newspaper",
-      "url": "https://mintlify.com/blog"
-    }
-  ],
   "navigation": [
     {
-      "group": "Get Started",
+      "group": "The Basics",
       "pages": [
-        "introduction",
-        "quickstart",
-        "development"
+        "the-basics/introduction",
+        "the-basics/quickstart",
+        "the-basics/development"
       ]
     },
     {
-      "group": "Essentials",
+      "group": "Developer Dashboard",
       "pages": [
-        "essentials/markdown",
-        "essentials/code",
-        "essentials/images",
-        "essentials/settings",
-        "essentials/navigation",
-        "essentials/reusable-snippets"
+        "api-reference/introduction",
+        "api-reference/authentication"
       ]
     },
     {
-      "group": "API Documentation",
+      "group": "Status Codes & Rate Limit",
       "pages": [
-        "api-reference/introduction"
-      ]
-    },
-    {
-      "group": "Endpoint Examples",
-      "pages": [
-        "api-reference/endpoint/get",
-        "api-reference/endpoint/create",
-        "api-reference/endpoint/delete"
+        "status-code/status-codes",
+        "status-code/rate-limit"
       ]
     }
   ],
+  "anchors": [
+    {
+      "name": "Discussions",
+      "icon": "layer-group",
+      "url": "https://www.themoviedb.org/discuss"
+    },
+    {
+      "name": "Leaderboard",
+      "icon": "Water-ladder",
+      "url": "https://www.themoviedb.org/leaderboard"
+    }
+  ],
+  "metadata": {
+    "title": "TMDB API Documentation",
+    "description": "This documentation is an assessment task under the mentorship program of TWMP",
+    "author": "Ileolami",
+    "image": "/images/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg",
+    "keywords": "TMDB API Documentation"
+  },
   "footerSocials": {
     "x": "https://x.com/_ileolami",
     "github": "https://github.com/Ileolami",
     "linkedin": "https://linkedin.com/in/makindemercymiracle",
-    "youtube": "https://www.youtube.com/@_ileolami"
+    "youtube": "https://www.youtube.com/@_ileolami",
+    "telegram": "https://t.me/IleolaMii"
   }
 }
