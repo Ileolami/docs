@@ -36,7 +36,7 @@
       "openapi": "/api-reference/openapi.yaml"
     },
     {
-      "name": "Change Log",
+      "name": "Changelog",
       "url": "changelog"
     }
   ],
