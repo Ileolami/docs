@@ -32,8 +32,11 @@
   "tabs": [
     {
       "name": "API Reference",
-      "url": "api-reference",
-      "openapi": "/api-reference/openapi.yaml"
+      "url": "api-reference"
+    },
+    {
+      "name": "Changelog",
+      "url": "changelog"
     }
   ],
   "navigation": [
@@ -57,6 +60,13 @@
       "pages": [
         "status-code/status-codes",
         "status-code/rate-limit"
+      ]
+    },
+    {
+      "group": "Changelog",
+      "pages": [
+        "changelog/changelog",
+        "changelog/remid"
       ]
     }
   ],
