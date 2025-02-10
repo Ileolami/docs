@@ -34,6 +34,10 @@
       "name": "API Reference",
       "url": "api-reference",
       "openapi": "/api-reference/openapi.yaml"
+    },
+    {
+      "name": "Change Log",
+      "url": "changelog"
     }
   ],
   "navigation": [
@@ -57,6 +61,12 @@
       "pages": [
         "status-code/status-codes",
         "status-code/rate-limit"
+      ]
+    },
+    {
+      "group": "Change Log",
+      "pages": [
+        "changelog/changlelog"
       ]
     }
   ],
