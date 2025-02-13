@@ -45,8 +45,10 @@
       "group": "The Basics",
       "pages": [
         "the-basics/introduction",
-        "the-basics/quickstart",
-        "the-basics/development"
+        "the-basics/development",
+        "the-basics/pop-trending",
+        "the-basics/roadmap",
+        "the-basics/faq"
       ]
     },
     {
