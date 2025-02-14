@@ -48,14 +48,23 @@
         "the-basics/development",
         "the-basics/pop-trending",
         "the-basics/roadmap",
+        "the-basics/wrapper-libraries",
         "the-basics/faq"
       ]
     },
     {
-      "group": "Developer Dashboard",
+      "group": "Authentication",
       "pages": [
-        "api-reference/introduction",
-        "api-reference/authentication"
+        "authentication/application",
+        "authentication/user",
+        "authentication/guest-session"
+      ]
+    },
+    {
+      "group": "Quick Guides",
+      "pages": [
+        "api-reference/guides/introduction",
+        "api-reference/guides/authentication"
       ]
     },
     {
