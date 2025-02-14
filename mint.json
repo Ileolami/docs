@@ -61,11 +61,11 @@
       ]
     },
     {
-      "group": "Quick Guides",
+      "group": "Guides",
       "pages": [
         "api-reference/guides/introduction",
-        "api-reference/guides/authentication",
-        "api-reference/guides/get-api"
+        "api-reference/guides/get-api",
+        "api-reference/guides/authentication"
       ]
     },
     {
