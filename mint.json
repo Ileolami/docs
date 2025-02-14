@@ -64,7 +64,8 @@
       "group": "Quick Guides",
       "pages": [
         "api-reference/guides/introduction",
-        "api-reference/guides/authentication"
+        "api-reference/guides/authentication",
+        "api-reference/guides/get-api"
       ]
     },
     {
@@ -72,6 +73,13 @@
       "pages": [
         "status-code/status-codes",
         "status-code/rate-limit"
+      ]
+    },
+    {
+      "group": "Images",
+      "pages": [
+        "image/basic",
+        "image/languages"
       ]
     },
     {
@@ -104,7 +112,7 @@
     "x": "https://x.com/_ileolami",
     "github": "https://github.com/Ileolami",
     "linkedin": "https://linkedin.com/in/makindemercymiracle",
-    "youtube": "https://www.youtube.com/@_ileolami",
+    "youtube": "https://www.youtube.com/@ileolami",
     "telegram": "https://t.me/IleolaMii"
   }
 }
