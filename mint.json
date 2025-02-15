@@ -78,8 +78,8 @@
     {
       "group": "Images",
       "pages": [
-        "image/basic",
-        "image/languages"
+        "for-image/basic",
+        "for-image/languages"
       ]
     },
     {
