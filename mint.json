@@ -92,7 +92,7 @@
   "anchors": [
     {
       "name": "Discussions",
-      "icon": "layer-group",
+      "icon": "people",
       "url": "https://www.themoviedb.org/discuss"
     },
     {
