@@ -8,26 +8,86 @@ If you need help or support, please head over to our [API support forum](https:/
 
 
 # Pick a language
-
+ 
 Select your preferred language:
 
-- [Shell](#)  
-- [Node](#)  
-- [Ruby](#)  
-- [PHP](#)  
-- [Python](#)  
-- [Java](#)  
-- [C#](#)
+<CodeGroup className="check">
+```shell Shell
+curl --request GET \
+     --url https://api.themoviedb.org/3/authentication \
+     --header 'accept: application/json'
+```
+```javascript Node
+const url = 'https://api.themoviedb.org/3/authentication';
+const options = {method: 'GET', headers: {accept: 'application/json'}};
 
----
+fetch(url, options)
+  .then(res => res.json())
+  .then(json => console.log(json))
+  .catch(err => console.error(err));
+```
+```ruby Ruby
+require 'uri'
+require 'net/http'
 
-## Credentials
+url = URI("https://api.themoviedb.org/3/authentication")
 
-<button onclick="window.open('https://your-api-key-url.com', '_blank')">Get API Key</button>
+http = Net::HTTP.new(url.host, url.port)
+http.use_ssl = true
 
-```plaintext
-Authorization: Bearer YOUR_API_KEY
+request = Net::HTTP::Get.new(url)
+request["accept"] = 'application/json'
 
- <
+response = http.request(request)
+puts response.read_body
+```
+```php PHP
+<?php
+require_once('vendor/autoload.php');
 
+$client = new \GuzzleHttp\Client();
+
+$response = $client->request('GET', 'https://api.themoviedb.org/3/authentication', [
+  'headers' => [
+    'accept' => 'application/json',
+  ],
+]);
+
+echo $response->getBody();
+```
+```python Python 
+import requests
+
+url = "https://api.themoviedb.org/3/authentication"
+
+headers = {"accept": "application/json"}
+
+response = requests.get(url, headers=headers)
+
+print(response.text)
+```
+```java Java
+OkHttpClient client = new OkHttpClient();
+
+Request request = new Request.Builder()
+  .url("https://api.themoviedb.org/3/authentication")
+  .get()
+  .addHeader("accept", "application/json")
+  .build();
+
+Response response = client.newCall(request).execute();
+```
+```c C# icon="c"
+using RestSharp;
+
+
+var options = new RestClientOptions("https://api.themoviedb.org/3/authentication");
+var client = new RestClient(options);
+var request = new RestRequest("");
+request.AddHeader("accept", "application/json");
+var response = await client.GetAsync(request);
+
+Console.WriteLine("{0}", response.Content);
+```
+</CodeGroup>
 

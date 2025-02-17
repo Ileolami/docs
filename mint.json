@@ -45,6 +45,7 @@
       "group": "The Basics",
       "pages": [
         "the-basics/introduction",
+        "the-basics/quickstart",
         "the-basics/development",
         "the-basics/pop-trending",
         "the-basics/roadmap",
@@ -61,10 +62,9 @@
       ]
     },
     {
-      "group": "Guides",
+      "group": "Developer Dashboard",
       "pages": [
         "api-reference/guides/introduction",
-        "api-reference/guides/get-api",
         "api-reference/guides/authentication"
       ]
     },
@@ -114,5 +114,10 @@
     "linkedin": "https://linkedin.com/in/makindemercymiracle",
     "youtube": "https://www.youtube.com/@ileolami",
     "telegram": "https://t.me/IleolaMii"
-  }
+  },
+  "integrations": {
+    "ga4": {
+        "measurementId": "G-S7R2Q4TZ81"
+    }
+}
 }
