@@ -1,93 +1,117 @@
 ---
-title: 'Introduction'
+title: "Introduction"
+description: "This is an interactive playground to test your API key"
 ---
 
-Welcome to version 3 of The Movie Database (TMDB) API. 
-This is where you will find the definitive list of currently available methods for our movie, TV, actor, and image API. 
+Welcome to version 3 of The Movie Database (TMDB) API.
+This is where you will find the definitive list of currently available methods for our movie, TV, actor, and image API.
 If you need help or support, please head over to our [API support forum](https://www.themoviedb.org/talk/category/5047958519c29526b50017d6).
 
+<Steps>
+ <Step title="Pick a language">
+   Select your preferred language:
+    <CodeGroup>
+      ```shell Shell
+      curl --request GET \
+          --url https://api.themoviedb.org/3/authentication \
+          --header 'Authorization: Bearer {api-key}' \
+          --header 'accept: application/json'
+      ```
+      ```javascript Node
+      const url = 'https://api.themoviedb.org/3/authentication';
+      const options = {
+        method: 'GET',
+        headers: {
+          accept: 'application/json',
+          Authorization: 'Bearer {api-key}'
+        }
+      };
 
-# Pick a language
- 
-Select your preferred language:
+      fetch(url, options)
+        .then(res => res.json())
+        .then(json => console.log(json))
+        .catch(err => console.error(err));
+      ```
+      ```ruby Ruby
+      require 'uri'
+      require 'net/http'
 
-<CodeGroup className="check">
-```shell Shell
-curl --request GET \
-     --url https://api.themoviedb.org/3/authentication \
-     --header 'accept: application/json'
-```
-```javascript Node
-const url = 'https://api.themoviedb.org/3/authentication';
-const options = {method: 'GET', headers: {accept: 'application/json'}};
+      url = URI("https://api.themoviedb.org/3/authentication")
 
-fetch(url, options)
-  .then(res => res.json())
-  .then(json => console.log(json))
-  .catch(err => console.error(err));
-```
-```ruby Ruby
-require 'uri'
-require 'net/http'
+      http = Net::HTTP.new(url.host, url.port)
+      http.use_ssl = true
 
-url = URI("https://api.themoviedb.org/3/authentication")
+      request = Net::HTTP::Get.new(url)
+      request["accept"] = 'application/json'
+      request["Authorization"] = 'Bearer {api-key}'
 
-http = Net::HTTP.new(url.host, url.port)
-http.use_ssl = true
+      response = http.request(request)
+      puts response.read_body
+      ```
+      ```php PHP
+      <?php
+      require_once('vendor/autoload.php');
 
-request = Net::HTTP::Get.new(url)
-request["accept"] = 'application/json'
+      $client = new \GuzzleHttp\Client();
 
-response = http.request(request)
-puts response.read_body
-```
-```php PHP
-<?php
-require_once('vendor/autoload.php');
+      $response = $client->request('GET', 'https://api.themoviedb.org/3/authentication', [
+        'headers' => [
+          'accept' => 'application/json',
+          'Authorization' => 'Bearer {api-key}'
+        ],
+      ]);
 
-$client = new \GuzzleHttp\Client();
+      echo $response->getBody();
+      ```
+      ```python Python
+      import requests
 
-$response = $client->request('GET', 'https://api.themoviedb.org/3/authentication', [
-  'headers' => [
-    'accept' => 'application/json',
-  ],
-]);
+      url = "https://api.themoviedb.org/3/authentication"
 
-echo $response->getBody();
-```
-```python Python 
-import requests
+      headers = {
+        "accept": "application/json",
+        "Authorization": "Bearer {api-key}"
+      }
 
-url = "https://api.themoviedb.org/3/authentication"
+      response = requests.get(url, headers=headers)
 
-headers = {"accept": "application/json"}
+      print(response.text)
+      ```
+      ```java Java
+      OkHttpClient client = new OkHttpClient();
 
-response = requests.get(url, headers=headers)
+      Request request = new Request.Builder()
+        .url("https://api.themoviedb.org/3/authentication")
+        .get()
+        .addHeader("accept", "application/json")
+        .addHeader("Authorization", "Bearer {api-key}")
+        .build();
 
-print(response.text)
-```
-```java Java
-OkHttpClient client = new OkHttpClient();
+      Response response = client.newCall(request).execute();
+      ```
+      ```csharp C#
+      using RestSharp;
 
-Request request = new Request.Builder()
-  .url("https://api.themoviedb.org/3/authentication")
-  .get()
-  .addHeader("accept", "application/json")
-  .build();
+      var options = new RestClientOptions("https://api.themoviedb.org/3/authentication");
+      var client = new RestClient(options);
+      var request = new RestRequest("");
+      request.AddHeader("accept", "application/json");
+      request.AddHeader("Authorization", "Bearer {api-key}");
+      var response = await client.GetAsync(request);
 
-Response response = client.newCall(request).execute();
-```
-```c C# icon="c"
-using RestSharp;
-
-
-var options = new RestClientOptions("https://api.themoviedb.org/3/authentication");
-var client = new RestClient(options);
-var request = new RestRequest("");
-request.AddHeader("accept", "application/json");
-var response = await client.GetAsync(request);
-
-Console.WriteLine("{0}", response.Content);
-```
-</CodeGroup>
-
+      Console.WriteLine("{0}", response.Content);
+      ```
+    </CodeGroup>
+  </Step>
+  <Step title="Credentials">
+    <Card>
+      <button className="api-key"><a href="https://www.themoviedb.org/login">Get your API Key ↗</a></button>
+    </Card>
+  </Step>
+  <Step title="Try it">
+    <CardGroup cols={1}>
+      <Card title="Validate Your API Key" href="/api-reference/guides/authentication" icon="arrow-up-right" horizontal>
+      </Card>
+    </CardGroup>
+  </Step>
+</Steps>

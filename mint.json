@@ -2,8 +2,8 @@
   "$schema": "https://mintlify.com/schema.json",
   "name": "TMDB API Documentation",
   "logo": {
-    "dark": "/images/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg",
-    "light": "/images/blue_square_2-d537fb228cf3ded904ef09b136fe3fec72548ebc1fea3fbbd1ad9e36364db38b.svg"
+    "dark": "/logo/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg",
+    "light": "/logo/blue_short-8e7b30f73a4020692ccca9c88bafe5dcb6f8a62a4c6bc55cd9ba82bb2cd95f6c.svg"
   },
   "favicon": "/images/29c6fee-blue_short.svg",
   "colors": {
@@ -66,13 +66,7 @@
       "pages": [
         "api-reference/guides/introduction",
         "api-reference/guides/authentication"
-      ]
-    },
-    {
-      "group": "Status Codes & Rate Limit",
-      "pages": [
-        "status-code/status-codes",
-        "status-code/rate-limit"
+
       ]
     },
     {
@@ -80,6 +74,20 @@
       "pages": [
         "for-image/basic",
         "for-image/languages"
+      ]
+    },
+    {
+      "group": "Region",
+      "pages": [
+        "region/languages",
+        "region/region-support"
+      ]
+    },
+    {
+      "group": "Status Codes & Rate Limit",
+      "pages": [
+        "status-code/status-codes",
+        "status-code/rate-limit"
       ]
     },
     {
