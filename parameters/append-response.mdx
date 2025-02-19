@@ -1,0 +1,36 @@
+---
+title: Append To Response
+icon: "circle-plus"
+---
+`append_to_response` is an easy and efficient way to append extra requests to any top level namespace. 
+The movie, TV show, TV season, TV episode and person detail methods all support this query parameter. 
+This makes it possible to make sub requests within the same namespace in a single HTTP request. 
+Each request will get appended to the response as a new JSON object.
+
+Here's a quick example,
+let's assume you want the details and the videos for a movie. 
+Usually you would think you have to issue two requests:
+```shell Examples
+curl --request GET \
+     --url 'https://api.themoviedb.org/3/movie/11' \
+     --header 'Authorization: Bearer {ACCESS_TOKEN}'
+
+curl --request GET \
+     --url 'https://api.themoviedb.org/3/movie/11/videos' \
+     --header 'Authorization: Bearer {ACCESS_TOKEN}'
+```
+But with `append_to_response` you can issue a single request:
+```shell Example
+curl --request GET \
+     --url 'https://api.themoviedb.org/3/movie/11?append_to_response=videos' \
+     --header 'Authorization: Bearer {ACCESS_TOKEN}'
+```
+Even more powerful, you can issue multiple requests, just comma separate the values:
+```shell Example
+curl --request GET \
+     --url 'https://api.themoviedb.org/3/movie/11?append_to_response=videos,images' \
+     --header 'Authorization: Bearer {ACCESS_TOKEN}'
+```
+<Info>
+Each method will still accept the query parameters supported by that specific request. This is especially important for images, as the language parameter will filter them. In such cases, the `include_image_language` parameter can be helpful, as explained on the [image language](/parameters/image_languages) page.
+</Info>

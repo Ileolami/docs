@@ -1,0 +1,184 @@
+---
+title: "Introduction"
+description: "This is an interactive playground to test your API key"
+---
+
+Welcome to version 3 of The Movie Database (TMDB) API.
+This is where you will find the definitive list of currently available methods for our movie, TV, actor, and image API.
+If you need help or support, please head over to our [API support forum](https://www.themoviedb.org/talk/category/5047958519c29526b50017d6).
+
+## 1. Select your preferred language:
+
+<Tabs>
+
+  <Tab title={
+    <div className="flex items-center gap-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg" width="20" height="20" />
+      Shell
+    </div>
+  }>
+    ```shell
+    curl --request GET \
+        --url https://api.themoviedb.org/3/authentication \
+        --header 'Authorization: Bearer {ACCESS_TOKEN}' \
+        --header 'accept: application/json'
+    ```
+  </Tab>
+
+  <Tab title={
+    <div className="flex items-center gap-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" width="20" height="20" />
+      Node
+    </div>
+  }>
+    ```javascript
+    const url = 'https://api.themoviedb.org/3/authentication';
+    const options = {
+      method: 'GET',
+      headers: {
+        accept: 'application/json',
+        Authorization: 'Bearer {ACCESS_TOKEN}'
+      }
+    };
+
+    fetch(url, options)
+      .then(res => res.json())
+      .then(json => console.log(json))
+      .catch(err => console.error(err));
+    ```
+  </Tab>
+
+  <Tab title={
+    <div className="flex items-center gap-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original.svg" width="20" height="20" />
+      Ruby
+    </div>
+  }>
+  
+    ```ruby
+    require 'uri'
+    require 'net/http'
+
+    url = URI("https://api.themoviedb.org/3/authentication")
+
+    http = Net::HTTP.new(url.host, url.port)
+    http.use_ssl = true
+
+    request = Net::HTTP::Get.new(url)
+    request["accept"] = 'application/json'
+    request["Authorization"] = 'Bearer {ACCESS_TOKEN}'
+
+    response = http.request(request)
+    puts response.read_body
+    ```
+  </Tab>
+
+  <Tab title={
+    <div className="flex items-center gap-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg" width="20" height="20" />
+      PHP
+    </div>
+  }>
+    ```php
+    <?php
+    require_once('vendor/autoload.php');
+
+    $client = new \GuzzleHttp\Client();
+
+    $response = $client->request('GET', 'https://api.themoviedb.org/3/authentication', [
+      'headers' => [
+        'accept' => 'application/json',
+        'Authorization' => 'Bearer {ACCESS_TOKEN}'
+      ],
+    ]);
+
+    echo $response->getBody();
+    ```
+  </Tab>
+
+  <Tab title={
+    <div className="flex items-center gap-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" width="20" height="20" />
+      Python
+    </div>
+  }>
+    ```python
+    import requests
+
+    url = "https://api.themoviedb.org/3/authentication"
+
+    headers = {
+      "accept": "application/json",
+      "Authorization": "Bearer {ACCESS_TOKEN}"
+    }
+
+    response = requests.get(url, headers=headers)
+
+    print(response.text)
+    ```
+  </Tab>
+
+  <Tab title={
+    <div className="flex items-center gap-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" width="20" height="20" />
+      Java
+    </div>
+  }>
+    ```java
+    OkHttpClient client = new OkHttpClient();
+
+    Request request = new Request.Builder()
+      .url("https://api.themoviedb.org/3/authentication")
+      .get()
+      .addHeader("accept", "application/json")
+      .addHeader("Authorization", "Bearer {ACCESS_TOKEN}")
+      .build();
+
+    Response response = client.newCall(request).execute();
+    ```
+  </Tab>
+
+  <Tab title={
+    <div className="flex items-center gap-2">
+      <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-original.svg" width="20" height="20" />
+      C#
+    </div>
+  }>
+    ```csharp
+    using RestSharp;
+
+    var options = new RestClientOptions("https://api.themoviedb.org/3/authentication");
+    var client = new RestClient(options);
+    var request = new RestRequest("");
+    request.AddHeader("accept", "application/json");
+    request.AddHeader("Authorization", "Bearer {ACCESS_TOKEN}");
+    var response = await client.GetAsync(request);
+
+    Console.WriteLine("{0}", response.Content);
+    ```
+  </Tab>
+
+</Tabs>
+## 2. Credentials
+<Card >
+  <label className=" border p-2 rounded-lg w-24">HEADER</label>
+  <div className="flex flex-col">
+    <input
+      type="text"
+      placeholder="Authorization"
+      className="block min-w-0 grow py-1.5 pr-3 pl-5 border rounded-lg mt-5 text-base text-gray-900 placeholder:text-gray-400 focus:outline-none sm:text-sm/6 mb-4"
+    />
+    
+  </div>
+  <button className="api-key"><a href="https://www.themoviedb.org/login">Get your API Key ↗</a></button>
+
+   
+</Card>
+
+## 3. Try It!
+<CardGroup cols={1}>
+  <Card title="Validate Your API Key" href="/api-reference/guides/authentication" icon="arrow-up-right" horizontal>
+  </Card>
+</CardGroup>
+
+

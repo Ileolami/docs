@@ -1,0 +1,43 @@
+---
+title: "Regions"
+description: "How does region support work on TMDB?"
+icon: "globe"
+---
+
+
+There's two aspects to regions on TMDB that should be explained. The first is the new `region` parameter.
+
+The region paramater will act as a filter to search for and display matching release date information. This parameter is expected to be an [ISO 3166-1](https://en.wikipedia.org/wiki/ISO_3166-2) code.
+
+For example, if you were searching for the movie Whiplash and wanted to show the German release date (to go with the German translation) you can make a query like so:
+  ```shell Example German Request
+  curl --request GET \
+       --url 'https://api.themoviedb.org/3/search/movie?query=Whiplash&language=de-DE&region=DE' \
+       --header 'Authorization: Bearer {ACCESS_TOKEN}' \
+       --header 'accept: application/json'
+  ```
+
+
+In this case, `region` is simply acting as a presentation filter. In the event that we don't have a release date entered for the country you are searching for, we simply default back to the primary release date like always. This is the same as entering no region parameter.
+
+Where this can get pretty amazing is with the `with_release_type` filter that can work in tandum with the `region`. Let's say you were looking for movies that are in the theatres in Germany this week. That's easy, we can now build this query:
+  ```shell Example German Theatrical Request
+  curl --request GET \
+       --url 'https://api.themoviedb.org/3/discover/movie?language=de-DE&region=DE&release_date.gte=2016-11-16&release_date.lte=2016-12-02&with_release_type=2|3' \
+       --header 'Authorization: Bearer {ACCESS_TOKEN}' \
+       --header 'accept: application/json'
+  ```
+
+
+You can of course specify any release type as found in [our documentation](/api-reference/movies/release-dates). If you do not specify `with_release_type` while using the `region` param on discover, `region` simply acts as a filter looking for any movies that match your filter criteria that has at a minimum, one matching release date for the country specified.
+
+### Release Types
+
+| Type | Release              |
+| ---- | -------------------- |
+| 1    | Premiere             |
+| 2    | Theatrical (limited) |
+| 3    | Theatrical           |
+| 4    | Digital              |
+| 5    | Physical             |
+| 6    | TV                   |
