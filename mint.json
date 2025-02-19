@@ -58,6 +58,7 @@
       "pages": [
         "parameters/append-response",
         "parameters/basic",
+        "parameters/daily-id",
         "parameters/finding-id",
         "parameters/guest-session",
         "parameters/image_languages",
