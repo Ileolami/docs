@@ -20,38 +20,19 @@ Before receiving your API key, you’ll need to agree to our terms of use. You c
 <Step>
 Go to [TheMovieDB](https://www.themoviedb.org/)
 </Step>
-<Step>
-Click on `Join TMDB`
+<Step title="Click on Join TDB">
 <Frame>
 <img height="100" noZoom src="/images/tmbd.png"/>
 </Frame>
----
 </Step>
-<Step>
-Fill in your details
-<Frame>
-<img height="200" noZoom src="/images/signup.png"/>
-</Frame>
----
+<Step title="Fill in your details (Username, password and email address)">
 </Step>
-<Step>
-Verify you are human by clicking `Begin`
-<Frame>
-<img height="200" noZoom src="/images/human-verify.png"/>
-</Frame>
----
+
+<Step title="Activate your Account">
+TMDB will send you a mail to confirm your address. Click on `ACTIVATE MY ACCOUNT`
 </Step>
-<Step>
-TMDB will send you an email to confirm your address. Click on `ACTIVATE MY ACCOUNT`
-<Frame>
-<img height="200" noZoom src="/images/activate.png"/>
-</Frame>
-</Step>
-<Step>
-Once your email is verified, enter the username and password you used for registration.
-<Frame>
-<img height="200" noZoom src="/images/login.png"/>
-</Frame>
+<Step title="Enter your email and password">
+Once your email is verified, re-enter the username and password you used for registration.
 </Step>
 </Steps>
 </Accordion>
@@ -73,45 +54,28 @@ If you try again and still don’t receive a confirmation email, your email addr
 <Steps>
 <Step>
 Once logged in, click on your profile icon (the icon with the first letter of your username).
-<Frame>
-<img height="200" noZoom src="/images/userfirst.png"/>
-</Frame>
----
 </Step>
 <Step>
 Click on `Settings`
-<Frame>
-<img height="200" noZoom src="/images/setting.png"/>
-</Frame>
----
 </Step>
 <Step>
 On the sidebar, scroll down and click on `API`
 <Frame>
 <img height="200" noZoom src="/images/API.png"/>
 </Frame>
----
 </Step>
 <Step>
 Under `Request an API Key`, click on `click here` to generate an API key.
 <Frame>
 <img height="200" noZoom src="/images/click-here.png"/>
 </Frame>
----
 </Step>
 <Step>
 Choose the type of API key you want to register for and accept the terms of use.
-<Frame>
-<img height="200" noZoom src="/images/type.png"/>
-</Frame>
----
+
 </Step>
 <Step>
 Fill in your application details and click on `Submit`.
-<Frame>
-<img height="200" noZoom src="/images/application.png"/>
-</Frame>
----
 </Step>
 <Step>
 After a successful submission, you’ll be redirected to another page. 
@@ -152,7 +116,7 @@ With a request token in hand, approve it using this URL:
 ```shell
 https://www.themoviedb.org/authenticate/{REQUEST_TOKEN}
 ```
-Or, pass this URL with a `redirect_to` parameter:
+Or, use this URL with a `redirect_to` parameter:
 ```shell
 https://www.themoviedb.org/authenticate/{REQUEST_TOKEN}?redirect_to=http://www.yourapp.com/approved
 ```

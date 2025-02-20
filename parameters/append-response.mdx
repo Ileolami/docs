@@ -8,29 +8,20 @@ This makes it possible to make sub requests within the same namespace in a singl
 Each request will get appended to the response as a new JSON object.
 
 Here's a quick example,
-let's assume you want the details and the videos for a movie. 
-Usually you would think you have to issue two requests:
-```shell Examples
-curl --request GET \
-     --url 'https://api.themoviedb.org/3/movie/11' \
-     --header 'Authorization: Bearer {ACCESS_TOKEN}'
-
-curl --request GET \
-     --url 'https://api.themoviedb.org/3/movie/11/videos' \
-     --header 'Authorization: Bearer {ACCESS_TOKEN}'
-```
-But with `append_to_response` you can issue a single request:
+let's assume you want the details and the videos for a movie,  you can issue a single request with `append_to_response`:
 ```shell Example
 curl --request GET \
      --url 'https://api.themoviedb.org/3/movie/11?append_to_response=videos' \
      --header 'Authorization: Bearer {ACCESS_TOKEN}'
 ```
-Even more powerful, you can issue multiple requests, just comma separate the values:
+<Tip>
+For more effectiveness, you can issue multiple requests by using comma `,` to separate the values:
 ```shell Example
 curl --request GET \
      --url 'https://api.themoviedb.org/3/movie/11?append_to_response=videos,images' \
      --header 'Authorization: Bearer {ACCESS_TOKEN}'
 ```
+</Tip>
 <Info>
 Each method will still accept the query parameters supported by that specific request. This is especially important for images, as the language parameter will filter them. In such cases, the `include_image_language` parameter can be helpful, as explained on the [image language](/parameters/image_languages) page.
 </Info>

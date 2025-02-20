@@ -7,11 +7,19 @@
     "light": "#abf7f1",
     "dark": "#5ebedb"
   },
+  "fonts": {
+    "family": "Open Sans",
+      "weight": 500,
+      "heading": {
+        "weight": 700
+      }
+  },
   "favicon": "/images/29c6fee-blue_short.svg",
   "navigation": {
     "tabs": [
       {
-        "tab": "Documentation",
+        "tab": "Guide",
+        "icon": "open-book",
         "groups": [
           {
             "group": "Introduction",
@@ -19,7 +27,9 @@
               "the-basics/introduction",
               "the-basics/quickstart",
               "the-basics/application",
+              "the-basics/json",
               "the-basics/wrapper-libraries",
+              "the-basics/pop-trending",
               "the-basics/status-codes",
               "the-basics/rate-limit",
               "the-basics/roadmap",
@@ -36,7 +46,6 @@
               "parameters/guest-session",
               "parameters/image_languages",
               "parameters/languages",
-              "the-basics/pop-trending",
               "parameters/region-support",
               "parameters/search",
               "parameters/user"
