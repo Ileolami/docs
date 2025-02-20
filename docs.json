@@ -9,17 +9,14 @@
   },
   "fonts": {
     "family": "Open Sans",
-      "weight": 500,
-      "heading": {
-        "weight": 700
-      }
+      "weight": 500
   },
   "favicon": "/images/29c6fee-blue_short.svg",
   "navigation": {
     "tabs": [
       {
         "tab": "Guide",
-        "icon": "open-book",
+        "icon": "book",
         "groups": [
           {
             "group": "Introduction",
@@ -403,7 +400,7 @@
     "primary": {
       "type": "button",
       "label": "OAS",
-      "href": "https://developer.themoviedb.org/openapi"
+      "href": "https://raw.githubusercontent.com/Ileolami/docs/refs/heads/main/api-reference/openapi.yaml"
     }
   },
   "seo": {
