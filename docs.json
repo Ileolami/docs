@@ -9,361 +9,395 @@
   },
   "fonts": {
     "family": "Open Sans",
-      "weight": 500
+    "weight": 500
   },
-  "favicon": "/images/29c6fee-blue_short.svg",
+  "favicon": "/6dc6435-small-favicon.png",
   "navigation": {
-    "tabs": [
+    "versions": [
       {
-        "tab": "Guide",
-        "icon": "book",
-        "groups": [
+        "version": "3.0",
+        "tabs": [
           {
-            "group": "Introduction",
-            "pages": [
-              "the-basics/introduction",
-              "the-basics/quickstart",
-              "the-basics/application",
-              "the-basics/json",
-              "the-basics/wrapper-libraries",
-              "the-basics/pop-trending",
-              "the-basics/status-codes",
-              "the-basics/rate-limit",
-              "the-basics/roadmap",
-              "the-basics/faq"
+            "tab": "Guide",
+            "groups": [
+              {
+                "group": "Introduction",
+                "pages": [
+                  "the-basics/introduction",
+                  "the-basics/quickstart",
+                  "the-basics/application",
+                  "the-basics/json",
+                  "the-basics/wrapper-libraries",
+                  "the-basics/pop-trending",
+                  "the-basics/status-codes",
+                  "the-basics/rate-limit",
+                  "the-basics/roadmap",
+                  "the-basics/faq"
+                ]
+              },
+              {
+                "group": "Parameters",
+                "pages": [
+                  "parameters/append-response",
+                  "parameters/basic",
+                  "parameters/daily-id",
+                  "parameters/finding-id",
+                  "parameters/guest-session",
+                  "parameters/image_languages",
+                  "parameters/languages",
+                  "parameters/region-support",
+                  "parameters/search",
+                  "parameters/user"
+                ]
+              }
             ]
           },
           {
-            "group": "Parameters",
-            "pages": [
-              "parameters/append-response",
-              "parameters/basic",
-              "parameters/daily-id",
-              "parameters/finding-id",
-              "parameters/guest-session",
-              "parameters/image_languages",
-              "parameters/languages",
-              "parameters/region-support",
-              "parameters/search",
-              "parameters/user"
+            "tab": "API Reference",
+            "groups": [
+              {
+                "group": "Developer Dashboard",
+                "pages": [
+                  "api-reference/introduction",
+                  "api-reference/authentication"
+                ]
+              },
+              {
+                "group": "ACCOUNT",
+                "pages": [
+                  "api-reference/account/account-id",
+                  "api-reference/account/details",
+                  "api-reference/account/add-favourite",
+                  "api-reference/account/add-to-watchlist",
+                  "api-reference/account/favorite-movies",
+                  "api-reference/account/favorite-tv",
+                  "api-reference/account/lists",
+                  "api-reference/account/rated-movie",
+                  "api-reference/account/rated-tv",
+                  "api-reference/account/rated-tv-episode",
+                  "api-reference/account/watchlist-movies",
+                  "api-reference/account/watchlist-tv"
+                ]
+              },
+              {
+                "group": "AUTHENTICATION",
+                "pages": [
+                  "api-reference/authentication/create-guest-session",
+                  "api-reference/authentication/create-request-token",
+                  "api-reference/authentication/validate-request-token-with-login",
+                  "api-reference/authentication/create-session",
+                  "api-reference/authentication/create-session-from-v4-token",
+                  "api-reference/authentication/delete-session",
+                  "api-reference/authentication/validate-key"
+                ]
+              },
+              {
+                "group": "CERTIFICATION",
+                "pages": [
+                  "api-reference/certification/movies",
+                  "api-reference/certification/tv"
+                ]
+              },
+              {
+                "group": "CHANGES",
+                "pages": [
+                  "api-reference/changes/movies-list",
+                  "api-reference/changes/people-list",
+                  "api-reference/changes/tv-list"
+                ]
+              },
+              {
+                "group": "COLLECTION",
+                "pages": [
+                  "api-reference/collection/details",
+                  "api-reference/collection/images",
+                  "api-reference/collection/translations"
+                ]
+              },
+              {
+                "group": "COMPANIES",
+                "pages": [
+                  "api-reference/companies/details",
+                  "api-reference/companies/alternative-names",
+                  "api-reference/companies/images"
+                ]
+              },
+              {
+                "group": "CONFIGURATION",
+                "pages": [
+                  "api-reference/configuration/details",
+                  "api-reference/configuration/job",
+                  "api-reference/configuration/countries",
+                  "api-reference/configuration/languages",
+                  "api-reference/configuration/primary-translation",
+                  "api-reference/configuration/time-zones"
+                ]
+              },
+              {
+                "group": "CREDITS",
+                "pages": [
+                  "api-reference/credits/details"
+                ]
+              },
+              {
+                "group": "DISCOVER",
+                "pages": [
+                  "api-reference/discover/movies",
+                  "api-reference/discover/tv"
+                ]
+              },
+              {
+                "group": "FIND",
+                "pages": [
+                  "api-reference/find/find-by-id"
+                ]
+              },
+              {
+                "group": "GENRES",
+                "pages": [
+                  "api-reference/genres/movies",
+                  "api-reference/genres/tv"
+                ]
+              },
+              {
+                "group": "GUEST SESSION",
+                "pages": [
+                  "api-reference/guest-session/rated-movie",
+                  "api-reference/guest-session/rated-tv",
+                  "api-reference/guest-session/rated-tv-episodes"
+                ]
+              },
+              {
+                "group": "KEYWORDS",
+                "pages": [
+                  "api-reference/keywords/details",
+                  "api-reference/keywords/movies"
+                ]
+              },
+              {
+                "group": "LISTS",
+                "pages": [
+                  "api-reference/lists/details",
+                  "api-reference/lists/delete",
+                  "api-reference/lists/add-movie",
+                  "api-reference/lists/check-item-status",
+                  "api-reference/lists/clear",
+                  "api-reference/lists/create",
+                  "api-reference/lists/remove-movie"
+                ]
+              },
+              {
+                "group": "MOVIE LISTS",
+                "pages": [
+                  "api-reference/movie-lists/now-playing",
+                  "api-reference/movie-lists/popular",
+                  "api-reference/movie-lists/top-rated",
+                  "api-reference/movie-lists/upcoming"
+                ]
+              },
+              {
+                "group": "MOVIES",
+                "pages": [
+                  "api-reference/movies/details",
+                  "api-reference/movies/account-states",
+                  "api-reference/movies/alternative-title",
+                  "api-reference/movies/changes",
+                  "api-reference/movies/credit",
+                  "api-reference/movies/external-ids",
+                  "api-reference/movies/images",
+                  "api-reference/movies/keywords",
+                  "api-reference/movies/latest",
+                  "api-reference/movies/lists",
+                  "api-reference/movies/recommendations",
+                  "api-reference/movies/release-dates",
+                  "api-reference/movies/reviews",
+                  "api-reference/movies/similar",
+                  "api-reference/movies/translations",
+                  "api-reference/movies/videos",
+                  "api-reference/movies/watch-providers",
+                  "api-reference/movies/add-rating",
+                  "api-reference/movies/delete-rating"
+                ]
+              },
+              {
+                "group": "NETWORK",
+                "pages": [
+                  "api-reference/network/details",
+                  "api-reference/network/alternative-names",
+                  "api-reference/network/images"
+                ]
+              },
+              {
+                "group": "PEOPLE",
+                "pages": [
+                  "api-reference/people/details",
+                  "api-reference/people/changes",
+                  "api-reference/people/combine-credit",
+                  "api-reference/people/external-ids",
+                  "api-reference/people/images",
+                  "api-reference/people/latest",
+                  "api-reference/people/movie-credit",
+                  "api-reference/people/tv-credit",
+                  "api-reference/people/tagged-images",
+                  "api-reference/people/translations"
+                ]
+              },
+              {
+                "group": "PEOPLE LISTS",
+                "pages": [
+                  "api-reference/people-lists/popular"
+                ]
+              },
+              {
+                "group": "REVIEWS",
+                "pages": [
+                  "api-reference/reviews/details"
+                ]
+              },
+              {
+                "group": "SEARCH",
+                "pages": [
+                  "api-reference/search/collection",
+                  "api-reference/search/company",
+                  "api-reference/search/keywords",
+                  "api-reference/search/movies",
+                  "api-reference/search/multi",
+                  "api-reference/search/person",
+                  "api-reference/search/tv"
+                ]
+              },
+              {
+                "group": "TRENDING",
+                "pages": [
+                  "api-reference/trending/all",
+                  "api-reference/trending/movie",
+                  "api-reference/trending/people",
+                  "api-reference/trending/tv"
+                ]
+              },
+              {
+                "group": "TV SERIES LIST",
+                "pages": [
+                  "api-reference/tv-series-list/airing-today",
+                  "api-reference/tv-series-list/on-the-air",
+                  "api-reference/tv-series-list/popular",
+                  "api-reference/tv-series-list/top-rated"
+                ]
+              },
+              {
+                "group": "TV SERIES",
+                "pages": [
+                  "api-reference/tv-series/details",
+                  "api-reference/tv-series/account-states",
+                  "api-reference/tv-series/aggregate-credit",
+                  "api-reference/tv-series/alternative-titles",
+                  "api-reference/tv-series/changes",
+                  "api-reference/tv-series/content-ratings",
+                  "api-reference/tv-series/credits",
+                  "api-reference/tv-series/episode-groups",
+                  "api-reference/tv-series/external-ids",
+                  "api-reference/tv-series/images",
+                  "api-reference/tv-series/keywords",
+                  "api-reference/tv-series/latest",
+                  "api-reference/tv-series/lists",
+                  "api-reference/tv-series/recommendations",
+                  "api-reference/tv-series/reviews",
+                  "api-reference/tv-series/screened-theatrically",
+                  "api-reference/tv-series/similar",
+                  "api-reference/tv-series/translations",
+                  "api-reference/tv-series/videos",
+                  "api-reference/tv-series/watch-providers",
+                  "api-reference/tv-series/add-ratings",
+                  "api-reference/tv-series/delete-rating"
+                ]
+              },
+              {
+                "group": "TV SEASONS",
+                "pages": [
+                  "api-reference/tv-seasons/details",
+                  "api-reference/tv-seasons/account-states",
+                  "api-reference/tv-seasons/aggregate-credit",
+                  "api-reference/tv-seasons/changes",
+                  "api-reference/tv-seasons/credits",
+                  "api-reference/tv-seasons/external-ids",
+                  "api-reference/tv-seasons/images",
+                  "api-reference/tv-seasons/translations",
+                  "api-reference/tv-seasons/videos",
+                  "api-reference/tv-seasons/watch-providers"
+                ]
+              },
+              {
+                "group": "TV EPISODES",
+                "pages": [
+                  "api-reference/tv-episodes/details",
+                  "api-reference/tv-episodes/account-states",
+                  "api-reference/tv-episodes/changes",
+                  "api-reference/tv-episodes/credits",
+                  "api-reference/tv-episodes/external-ids",
+                  "api-reference/tv-episodes/images",
+                  "api-reference/tv-episodes/translations",
+                  "api-reference/tv-episodes/videos",
+                  "api-reference/tv-episodes/add-rating",
+                  "api-reference/tv-episodes/delete-rating"
+                ]
+              },
+              {
+                "group": "TV EPISODES GROUPS",
+                "pages": [
+                  "api-reference/tv-episodes-groups/details"
+                ]
+              },
+              {
+                "group": "WATCH PROVIDERS",
+                "pages": [
+                  "api-reference/watch-providers/available-regions",
+                  "api-reference/watch-providers/movie-providers",
+                  "api-reference/watch-providers/tv-providers"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Changelog",
+            "groups": [
+              {
+                "group": "Change Log",
+                "pages": [
+                  "changelog/changlelog"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "API Reference",
-        "groups": [
+        "version": "4.0",
+        "tabs":[
           {
-            "group": "Developer Dashboard",
-            "pages": [
-              "api-reference/introduction",
-              "api-reference/authentication"
+            "tab": "Getting Started",
+            "groups": [
+              {
+                "group": "The Basics",
+                "pages": [
+                  "the-basics/introduction",
+                  "the-basics/quickstart"
+                ]
+              }
             ]
-          },
-          {
-            "group": "ACCOUNT",
-            "pages": [
-              "api-reference/account/account-id",
-              "api-reference/account/details",
-              "api-reference/account/add-favourite",
-              "api-reference/account/add-to-watchlist",
-              "api-reference/account/favorite-movies",
-              "api-reference/account/favorite-tv",
-              "api-reference/account/lists",
-              "api-reference/account/rated-movie",
-              "api-reference/account/rated-tv",
-              "api-reference/account/rated-tv-episode",
-              "api-reference/account/watchlist-movies",
-              "api-reference/account/watchlist-tv"
-            ]
-          },
-          {
-            "group": "AUTHENTICATION",
-            "pages": [
-              "api-reference/authentication/create-guest-session",
-              "api-reference/authentication/create-request-token",
-              "api-reference/authentication/validate-request-token-with-login",
-              "api-reference/authentication/create-session",
-              "api-reference/authentication/create-session-from-v4-token",
-              "api-reference/authentication/delete-session",
-              "api-reference/authentication/validate-key"
-            ]
-          },
-          {
-            "group": "CERTIFICATION",
-            "pages": [
-              "api-reference/certification/movies",
-              "api-reference/certification/tv"
-            ]
-          },
-          {
-            "group": "CHANGES",
-            "pages": [
-              "api-reference/changes/movies-list",
-              "api-reference/changes/people-list",
-              "api-reference/changes/tv-list"
-            ]
-          },
-          {
-            "group": "COLLECTION",
-            "pages": [
-              "api-reference/collection/details",
-              "api-reference/collection/images",
-              "api-reference/collection/translations"
-            ]
-          },
-          {
-            "group": "COMPANIES",
-            "pages": [
-              "api-reference/companies/details",
-              "api-reference/companies/alternative-names",
-              "api-reference/companies/images"
-            ]
-          },
-          {
-            "group": "CONFIGURATION",
-            "pages": [
-              "api-reference/configuration/details",
-              "api-reference/configuration/job",
-              "api-reference/configuration/countries",
-              "api-reference/configuration/languages",
-              "api-reference/configuration/primary-translation",
-              "api-reference/configuration/time-zones"
-            ]
-          },
-          {
-            "group": "CREDITS",
-            "pages": [
-              "api-reference/credits/details"
-            ]
-          },
-          {
-            "group": "DISCOVER",
-            "pages": [
-              "api-reference/discover/movies",
-              "api-reference/discover/tv"
-            ]
-          },
-          {
-            "group": "FIND",
-            "pages": [
-              "api-reference/find/find-by-id"
-            ]
-          },
-          {
-            "group": "GENRES",
-            "pages": [
-              "api-reference/genres/movies",
-              "api-reference/genres/tv"
-            ]
-          },
-          {
-            "group": "GUEST SESSION",
-            "pages": [
-              "api-reference/guest-session/rated-movie",
-              "api-reference/guest-session/rated-tv",
-              "api-reference/guest-session/rated-tv-episodes"
-            ]
-          },
-          {
-            "group": "KEYWORDS",
-            "pages": [
-              "api-reference/keywords/details",
-              "api-reference/keywords/movies"
-            ]
-          },
-          {
-            "group": "LISTS",
-            "pages": [
-              "api-reference/lists/details",
-              "api-reference/lists/delete",
-              "api-reference/lists/add-movie",
-              "api-reference/lists/check-item-status",
-              "api-reference/lists/clear",
-              "api-reference/lists/create",
-              "api-reference/lists/remove-movie"
-            ]
-          },
-          {
-            "group": "MOVIE LISTS",
-            "pages": [
-              "api-reference/movie-lists/now-playing",
-              "api-reference/movie-lists/popular",
-              "api-reference/movie-lists/top-rated",
-              "api-reference/movie-lists/upcoming"
-            ]
-          },
-          {
-            "group": "MOVIES",
-            "pages": [
-              "api-reference/movies/details",
-              "api-reference/movies/account-states",
-              "api-reference/movies/alternative-title",
-              "api-reference/movies/changes",
-              "api-reference/movies/credit",
-              "api-reference/movies/external-ids",
-              "api-reference/movies/images",
-              "api-reference/movies/keywords",
-              "api-reference/movies/latest",
-              "api-reference/movies/lists",
-              "api-reference/movies/recommendations",
-              "api-reference/movies/release-dates",
-              "api-reference/movies/reviews",
-              "api-reference/movies/similar",
-              "api-reference/movies/translations",
-              "api-reference/movies/videos",
-              "api-reference/movies/watch-providers",
-              "api-reference/movies/add-rating",
-              "api-reference/movies/delete-rating"
-            ]
-          },
-          {
-            "group": "NETWORK",
-            "pages": [
-              "api-reference/network/details",
-              "api-reference/network/alternative-names",
-              "api-reference/network/images"
-            ]
-          },
-          {
-            "group": "PEOPLE",
-            "pages": [
-              "api-reference/people/details",
-              "api-reference/people/changes",
-              "api-reference/people/combine-credit",
-              "api-reference/people/external-ids",
-              "api-reference/people/images",
-              "api-reference/people/latest",
-              "api-reference/people/movie-credit",
-              "api-reference/people/tv-credit",
-              "api-reference/people/tagged-images",
-              "api-reference/people/translations"
-            ]
-          },
-          {
-            "group": "PEOPLE LISTS",
-            "pages": [
-              "api-reference/people-lists/popular"
-            ]
-          },
-          {
-            "group": "REVIEWS",
-            "pages": [
-              "api-reference/reviews/details"
-            ]
-          },
-          {
-            "group": "SEARCH",
-            "pages": [
-              "api-reference/search/collection",
-              "api-reference/search/company",
-              "api-reference/search/keywords",
-              "api-reference/search/movies",
-              "api-reference/search/multi",
-              "api-reference/search/person",
-              "api-reference/search/tv"
-            ]
-          },
-          {
-            "group": "TRENDING",
-            "pages": [
-              "api-reference/trending/all",
-              "api-reference/trending/movie",
-              "api-reference/trending/people",
-              "api-reference/trending/tv"
-            ]
-          },
-          {
-            "group": "TV SERIES LIST",
-            "pages": [
-              "api-reference/tv-series-list/airing-today",
-              "api-reference/tv-series-list/on-the-air",
-              "api-reference/tv-series-list/popular",
-              "api-reference/tv-series-list/top-rated"
-            ]
-          },
-          {
-            "group": "TV SERIES",
-            "pages": [
-              "api-reference/tv-series/details",
-              "api-reference/tv-series/account-states",
-              "api-reference/tv-series/aggregate-credit",
-              "api-reference/tv-series/alternative-titles",
-              "api-reference/tv-series/changes",
-              "api-reference/tv-series/content-ratings",
-              "api-reference/tv-series/credits",
-              "api-reference/tv-series/episode-groups",
-              "api-reference/tv-series/external-ids",
-              "api-reference/tv-series/images",
-              "api-reference/tv-series/keywords",
-              "api-reference/tv-series/latest",
-              "api-reference/tv-series/lists",
-              "api-reference/tv-series/recommendations",
-              "api-reference/tv-series/reviews",
-              "api-reference/tv-series/screened-theatrically",
-              "api-reference/tv-series/similar",
-              "api-reference/tv-series/translations",
-              "api-reference/tv-series/videos",
-              "api-reference/tv-series/watch-providers",
-              "api-reference/tv-series/add-ratings",
-              "api-reference/tv-series/delete-rating"
-            ]
-          },
-          {
-            "group": "TV SEASONS",
-            "pages": [
-              "api-reference/tv-seasons/details",
-              "api-reference/tv-seasons/account-states",
-              "api-reference/tv-seasons/aggregate-credit",
-              "api-reference/tv-seasons/changes",
-              "api-reference/tv-seasons/credits",
-              "api-reference/tv-seasons/external-ids",
-              "api-reference/tv-seasons/images",
-              "api-reference/tv-seasons/translations",
-              "api-reference/tv-seasons/videos",
-              "api-reference/tv-seasons/watch-providers"
-            ]
-          },
-          {
-            "group": "TV EPISODES",
-            "pages": [
-              "api-reference/tv-episodes/details",
-              "api-reference/tv-episodes/account-states",
-              "api-reference/tv-episodes/changes",
-              "api-reference/tv-episodes/credits",
-              "api-reference/tv-episodes/external-ids",
-              "api-reference/tv-episodes/images",
-              "api-reference/tv-episodes/translations",
-              "api-reference/tv-episodes/videos",
-              "api-reference/tv-episodes/add-rating",
-              "api-reference/tv-episodes/delete-rating"
-            ]
-          },
-          {
-            "group": "TV EPISODES GROUPS",
-            "pages": [
-              "api-reference/tv-episodes-groups/details"
-            ]
-          },
-          {
-            "group": "WATCH PROVIDERS",
-            "pages": [
-              "api-reference/watch-providers/available-regions",
-              "api-reference/watch-providers/movie-providers",
-              "api-reference/watch-providers/tv-providers"
-            ]
-          }
-        ]
-      },
-      {
-        "tab": "Changelog",
-        "groups": [
-          {
-            "group": "Change Log",
-            "pages": [
-              "changelog/changlelog"
-            ]
-          }
+            
+         },
+         {
+          "tab": "API Reference",
+          "groups": [
+            {
+              "group": "Developer Dashboard",
+              "pages": [
+                "api-reference/introduction",
+                "api-reference/authentication"
+              ]
+            }
+          ]
+         }
         ]
       }
     ],
@@ -399,8 +433,8 @@
     ],
     "primary": {
       "type": "button",
-      "label": "OAS",
-      "href": "https://raw.githubusercontent.com/Ileolami/docs/refs/heads/main/api-reference/openapi.yaml"
+      "label": "Login",
+      "href": "https://www.themoviedb.org/login"
     }
   },
   "seo": {
