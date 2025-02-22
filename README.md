@@ -9,5 +9,5 @@ This is version 3 of TMDB API, where you will find the definitive list of curren
 ## Process of Documenting 
 1. [Postman](https://documenter.getpostman.com/view/32923208/2sAYdcrCA3) was used to test and documen all the endpoints.
 2. This API was exported and converted using [Kevin Swiber](https://kevinswiber.github.io/postman2openapi/)
-3. The openAPI was edited with [Swagger editor](https://editor-next.swagger.io/)
+3. The [openAPI](https://github.com/Ileolami/docs/blob/main/api-reference/openapi.yaml) was edited with [Swagger editor](https://editor-next.swagger.io/)
 4. Finally, integrated into Mintlify for interactiveness.
