@@ -1,32 +1,13 @@
-# Mintlify Starter Kit
+# TMDB API DOCUMENTATION
+> _This doc replicated [TMDB API doc ](https://developer.themoviedb.org/docs/getting-started) using mintlify but is not endorsed or certified by TMDB._
 
-Click on `Use this template` to copy the Mintlify starter kit. The starter kit contains examples including
+## What is TMDB?
+[The Movies DataBase(TMDB)](https://www.themoviedb.org/) is company that provides information on movies, TV shows, and celebrities. It's a community-driven platform where users can add and update content. 
 
-- Guide pages
-- Navigation
-- Customizations
-- API Reference pages
-- Use of popular components
+This is version 3 of TMDB API, where you will find the definitive list of currently available methods for our movie, tv, actor and image API.
 
-### Development
-
-Install the [Mintlify CLI](https://www.npmjs.com/package/mintlify) to preview the documentation changes locally. To install, use the following command
-
-```
-npm i -g mintlify
-```
-
-Run the following command at the root of your documentation (where mint.json is)
-
-```
-mintlify dev
-```
-
-### Publishing Changes
-
-Install our Github App to auto propagate changes from your repo to your deployment. Changes will be deployed to production automatically after pushing to the default branch. Find the link to install on your dashboard. 
-
-#### Troubleshooting
-
-- Mintlify dev isn't running - Run `mintlify install` it'll re-install dependencies.
-- Page loads as a 404 - Make sure you are running in a folder with `mint.json`
+## Process of Documenting 
+1. [Postman](https://documenter.getpostman.com/view/32923208/2sAYdcrCA3) was used to test and documen all the endpoints.
+2. This API was exported and converted using [Kevin Swiber](https://kevinswiber.github.io/postman2openapi/)
+3. The openAPI was edited with [Swagger editor](https://editor-next.swagger.io/)
+4. Finally, integrated into Mintlify for interactiveness.
