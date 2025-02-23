@@ -1,0 +1,24 @@
+---
+title: Application
+icon: "window"
+description: "Authenticate your application to access the API."
+---
+Application-level authentication is the default way to authenticate with the API. 
+Version 4 uses your v4 `access token` as a `Bearer token`. 
+You can request an API key by logging into your TMDB account and clicking [here](https://www.themoviedb.org/settings/api).
+
+## Bearer Token
+In your account page, under the API settings section, 
+you will find a token called API Read Access Token. 
+This token should be sent as an `Authorization` header. 
+Here is a simple cURL example:
+
+```shell
+curl --request GET \
+     --url https://api.themoviedb.org/4/list/1 \
+     --header 'Authorization: Bearer {ACCESS_TOKEN}'
+```
+
+Using the Bearer token allows for a single authentication process across both v3 and v4 API versions. Both versions provide the same level of access, so you can choose either one.
+
+For `GET` requests on v4, you can still use your v3 `api_key` query parameter if you prefer.

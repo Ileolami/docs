@@ -1,0 +1,25 @@
+---
+title: User
+icon: "user"
+description: "Authenticate a TMDB user within your app."
+---
+As mentioned in the getting started guide, we have a better separate application and user-based authentication. 
+The two systems are essentially the same, with the only difference being the token you're using. 
+This should make it easier to understand and use.
+
+## Basic Workflow
+1. Generate a new request token.
+2. Send the user to TMDB to approve the token.
+3. With an approved request token, generate a fresh access token.
+
+## Generating a Request Token
+A request token is a temporary token waiting for the TMDB user to authorize on your behalf. It serves no other purpose and cannot be used for authenticating requests. Unused request tokens will automatically expire after 15 minutes.
+
+## Asking for Approval on TMDB
+To get a user to approve your request token, direct them to the following URL:
+```shell
+https://www.themoviedb.org/auth/access?request_token={request_token}
+```
+Send the request token as a query parameter, as shown above.
+
+Once a user approves your request, they'll either be directed to the `/auth/access/approve` page on TMDB or redirected to the `redirect_to` path you specified when you made the request token. This can also be a local callback on mobile iOS and Android.
