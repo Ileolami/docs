@@ -1,8 +1,27 @@
 ---
 title: JSON & JSONP
 icon: "brackets-curly"
+desscription: "Understand the API response format"
 ---
-<Info>The only supported response format is JSON</Info>
+
+TMDB only uses JavaScript Object Notation(JSON) as the only text-based format for storing and displaying data. 
+
+<Tip>
+     if you are adding any body response to any of the endpoints, the format is like this:
+     ```shell Validating Request token with login details
+          curl --request POST \
+               --url https://api.themoviedb.org/3/authentication/token/validate_with_login \
+               --header 'Authorization: Bearer {ACCESS_TOKEN}' \
+               --header 'accept: application/json' \
+               --header 'content-type: application/json' \
+               --data '
+          {
+          "username": "johnny_appleseed",
+          "password": "test123",
+          "request_token": "1531f1a558c8357ce8990cf887ff196e8f5402ec"
+          }
+    ```
+</Tip>
 
 If you are using a JavaScript library and need to make requests from another public domain, 
 you can use the callback paramater which will encapsulate the JSON response in a JavaScript function for you.

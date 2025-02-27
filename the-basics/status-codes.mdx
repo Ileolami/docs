@@ -1,7 +1,7 @@
 ---
-title: Status Codes
+title: Status Codes & Rate Limiting
 description: "This is a list of status codes used by TMDB."
-icon: "code"
+icon: "stopwatch"
 ---
 
 ## Success Codes
@@ -60,3 +60,21 @@ icon: "code"
 | 45   | 403         | This user has been suspended.                             |
 | 46   | 503         | The API is undergoing maintenance. Try again later.       |
 | 47   | 400         | The input is not valid.                                   |
+
+## Rate Limiting
+<Card
+ icon="book"
+ horizontal
+ title="Legacy Rate Limits"
+>
+    As of December 16, 2019, the original API rate limit (40 requests every 10 seconds) has been disabled. 
+    For any questions, please visit our [API support forum](https://www.themoviedb.org/talk/category/5047958519c29526b50017d6).
+</Card>
+
+Although the legacy rate limits have been disabled, we still enforce upper limits to prevent excessive bulk scraping. 
+The current rate limit is 50 requests per second. 
+You may receive a `429` status code if you exceed or misuse the API.
+
+<Warning>
+ This limit is subject to change at any time. Please use the service responsibly.
+</Warning>

@@ -3,4 +3,26 @@ title: Versioning
 icon: "code-branch"
 ---
 
-As earlier mentioned, the documentaion is for version 3 of TMDB API
+TMDB offers two version of her API: which are version 3 and 4. 
+
+## [Version 3](/the-basics/introduction)
+- Stability and Coverage: v3 is the stable and widely-used version, providing comprehensive access to TMDB's core features, including data on movies, TV shows, actors, and images.
+- Authentication: Utilizes an `ACCESS_TOKEN` or as a `Bearer token` to authorize users.
+- Session ID: To generate a session id, you will need a `request token`.
+<Tip>Check the process [here](/the-basics/quickstart#creating-a-session-id-version-3)</Tip>
+```shell Version 3 base url
+   https://api.themoviedb.org/3/
+```
+
+## [Version 4](/version-4/documentation/getting)
+- Enhanced Features: Introduces **improvements** over v3, notably the enhanced "lists" feature, allowing for more complex and user-specific lists. 
+- Authentication: Requires a `ACCESS_TOKEN` in the `Authorization` header. This token provides a unified authentication method across both v3 and v4, simplifying the process.
+- Session ID: To generate a session id, you will need a `request token` and `access token`.
+<Tip>Check the process [here](/the-basics/quickstart#creating-session-id-version-4)</Tip>
+```shell Version 4 base url
+   https://api.themoviedb.org/4/
+```
+
+## Key Differences:
+- Lists Functionality: v4 offers a more advanced and flexible lists system compared to v3. If your application heavily relies on creating or managing lists, v4 is recommended. 
+- Authentication Method: While v3 allows for API key authentication via query parameters, v4 mandates the use of a Bearer token. 

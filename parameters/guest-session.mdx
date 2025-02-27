@@ -2,8 +2,19 @@
 title: Guest Session
 icon: "speaker"
 ---
-Guest sessions are a second type of user authentication. They have limited permissions as they can only rate a movie, TV show and TV episode. 
-Creating a guest session is as simple as calling the new [guest session](/api-reference/authentication/create-guest-session) method.
+Guest sessions are a second type of user authentication.  
+They are temporary, limited access session that allows users to interact with TMDB API without needing to create an account.
+They are only limited to rating a movie, TV show and TV episode. 
 
-Just like a fully authorized user session, guest sessions should be kept private as they tie a session within your application to a single token.
+<Tip>
+  - Guest sessions should be secure privately as hold as a session within your application to a single token.
+  - Guest sessions are only avaliable for 24 hours
+</Tip>
 
+## Creating a Guest session
+You can create a guest session id with this request:
+```shell Example for CReating Guest sesssion
+   curl --request GET \
+  --url https://api.themoviedb.org/3/authentication/guest_session/new \
+  --header 'Authorization: Bearer {ACCESS_TOKEN}'
+```
