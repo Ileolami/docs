@@ -1,0 +1,25 @@
+---
+title: Session ID
+icon: "id-badge"
+---
+
+## TMDB API and Session ID
+In TMDB's API, a session ID is primarily used for user authentication and account-related operations, such as:
+
+- Managing watchlists
+- Creating and editing lists
+- Rating movies and TV shows
+- Marking content as a favorite
+
+## Types of Sessions in TMDB API
+### 1. Guest Session ID
+- Used when a user is not logged in but wants to rate movies or TV shows.
+- Created using the `3/authentication/guest_session/new` endpoint.
+- Expires after 24 hours.
+
+### 2. User Session ID
+- Requires authentication via a request token and login credentials.
+- Created using the `/3/authentication/session/new` endpoint.
+- Used for actions tied to a TMDB account, such as managing watchlists and lists.
+
+
