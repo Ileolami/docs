@@ -422,12 +422,7 @@
               {
                 "group": "Documentation",
                 "pages": [
-                  "version-4/documentation/getting"
-                ]
-              },
-              {
-                "group": "Authentication",
-                "pages": [
+                  "version-4/documentation/getting",
                   "version-4/authetication/application",
                   "version-4/authetication/user"
                 ]
@@ -491,6 +486,10 @@
       {
         "label": "Support",
         "href": "https://www.themoviedb.org/about/get-in-touch/"
+      },
+      {
+        "label": "Github",
+        "href": "https://github.com/Ileolami/docs"
       },
       {
         "label": "Service Status",
