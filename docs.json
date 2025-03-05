@@ -23,6 +23,7 @@
   },
   "favicon": "/6dc6435-small-favicon.png",
   "navigation": {
+    
     "versions": [
       {
         "version": "3.0-stable",
@@ -435,15 +436,47 @@
          },
          {
           "tab": "API Reference",
-          "groups": [
-            {
-              "group": "Developer Dashboard",
-              "pages": [
-                "api-reference/introduction",
-                "api-reference/authentication"
-              ]
-            }
-          ]
+          "dropdowns": [
+              {
+                "dropdown": "ACCOUNT",
+                "icon": "file-user",
+                "pages": [
+                  "version-4/api-reference-4/account/lists",
+                  "version-4/api-reference-4/account/favorite-movies",
+                  "version-4/api-reference-4/account/favorite-tv-show",
+                  "version-4/api-reference-4/account/rated-movies",
+                  "version-4/api-reference-4/account/rated-tv-shows",
+                  "version-4/api-reference-4/account/recommend-movies",
+                  "version-4/api-reference-4/account/recommend-tv-shows",
+                  "version-4/api-reference-4/account/watchlist-movies",
+                  "version-4/api-reference-4/account/watchlist-tv-shows"
+                ]
+              },
+              {
+                "dropdown": "AUTH",
+                "icon": "shield",
+                "pages": [
+                  "version-4/api-reference-4/auth/create-a-request-token",
+                  "version-4/api-reference-4/auth/create-an-access-token",
+                  "version-4/api-reference-4/auth/logout"
+                ]
+              },
+              {
+                "dropdown": "LISTS",
+                "icon": "list",
+                "pages": [
+                  "version-4/api-reference-4/lists/add-items",
+                  "version-4/api-reference-4/lists/clear",
+                  "version-4/api-reference-4/lists/create-1",
+                  "version-4/api-reference-4/lists/delete",
+                  "version-4/api-reference-4/lists/details",
+                  "version-4/api-reference-4/lists/item-status",
+                  "version-4/api-reference-4/lists/remove-item",
+                  "version-4/api-reference-4/lists/update",
+                  "version-4/api-reference-4/lists/update-item"
+                ]
+              }
+            ]
          }
         ]
       }
